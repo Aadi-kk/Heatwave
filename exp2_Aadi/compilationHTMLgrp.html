@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatwave Intelligence System</title>
+    <!-- Task 3 -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Task 2 -->
+    <style>
+        nav.main-nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #1e293b;
+            text-align: center;
+        }
+
+        nav.main-nav li {
+            display: inline-block;
+        }
+
+        nav.main-nav a {
+            display: inline-block;
+            color: #f8fafc;
+            text-align: center;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav.main-nav a:hover {
+            background-color: #334155;
+            color: #ffedd5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 1 -->
+    <header style="background-color: #0f172a; padding: 24px; text-align: center; border-bottom: 4px solid #ea580c;">
+        <h1 id="systemName" title="Early Warning & Advisory Portal" style="color: #ffedd5; margin: 0 0 8px 0; font-size: 2.2rem;">
+            Heatwave Intelligence System
+        </h1>
+        <p id="logoText" style="color: #cbd5e1; font-style: italic; margin: 0 0 4px 0; text-align: center;">
+            Early Warning. Timely Action. Safer Communities.
+        </p>
+        <p id="seasonYear" style="color: #fdba74; margin: 0; text-align: center; font-size: 0.9rem;">
+            Monitoring Season: Summer 2026
+        </p>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="https://mausam.imd.gov.in" target="_blank">IMD Portal</a></li>
+            <li><a href="#about">Overview & Data</a></li>
+            <li><a href="#forecast">Forecast & Hotspots</a></li>
+            <li><a href="#media">Media Center</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+            <li><a href="mailto:coordinator@gmail.com">Contact Coordinator</a></li>
+            <li><a href="tel:+911234567890">Disaster Helpline</a></li>
+        </ul>
+    </nav>
+
+    <!-- Task 9 -->
+    <div class="layout-container">
+
+        <!-- Task 4 -->
+        <aside class="sidebar">
+            <h3>System Quick Links</h3>
+            <ul class="sidebar-list">
+                <li><a href="#about">System Overview</a></li>
+                <li><a href="#forecast">Regional Summary</a></li>
+                <li><a href="#media">Audio & Video Alerts</a></li>
+                <li><a href="#subscribe">Register for Alerts</a></li>
+            </ul>
+
+            <!-- Task 10 -->
+            <div class="offer-box">
+                CRITICAL WARNING
+                <span style="display:block; font-size: 0.85rem; font-weight: normal; margin-top: 5px;">
+                    Extreme Heat Advisory issued for Vidarbha & Marathwada Zone.
+                </span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <!-- Container Box 1: System Overview, Alerts, and Data Workflow -->
+            <section id="about" class="content-block">
+                <h2>System Overview & Data Workflow</h2>
+                
+                <div class="objective">
+                    <h3>Objective</h3>
+                    <p>
+                        The system aims to provide <strong>early, reliable, and region-specific</strong>
+                        warnings of heatwave conditions, enabling <em>timely response</em> by
+                        meteorologists, disaster-management officers, and the general public[cite: 4].
+                    </p>
+                </div>
+
+                <blockquote>
+                    "Timely and accurate heatwave intelligence saves lives. This system bridges the gap
+                    between raw weather data and actionable public advisories."[cite: 4]
+                    <br>&mdash; Chief Meteorologist, Disaster Management Cell[cite: 4]
+                </blockquote>
+
+                <h3>Severe Heatwave Alert Bulletin</h3>
+                <p>
+                    <strong>Alert:</strong> <mark>Severe Heatwave Warning</mark> issued for
+                    <strong>Region:</strong> <mark>Vidarbha &amp; Marathwada Zone</mark>[cite: 5]
+                </p>
+                <p>
+                    Maximum recorded temperature: 47<sup>&deg;C</sup>, exceeding normal by 6<sup>&deg;C</sup>[cite: 5].
+                    Bulletin Version: 2<sub>.1</sub>, issued by <abbr title="Automatic Weather Station">AWS</abbr> network in coordination with the <abbr title="India Meteorological Department">IMD</abbr>[cite: 5]. Citizens are advised to <em>avoid outdoor exposure between 12 PM and 4 PM</em>[cite: 5].
+                </p>
+
+                <div class="grid-2col">
+                    <div>
+                        <h3>Forecast & Alert Workflow</h3>
+                        <ol>
+                            <li>Collect temperature data</li>
+                            <li>Analyse heatwave conditions</li>
+                            <li>Prepare forecast</li>
+                            <li>Send heatwave alerts</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3>Data Sources</h3>
+                        <ul>
+                            <li>AWS Sensors</li>
+                            <li>IMD Database</li>
+                            <li>Satellite Feeds</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Key Stakeholders</h3>
+                <ul>
+                    <li>Meteorologists (Analyse data & prepare forecasts)</li>
+                    <li>Disaster Management Officers (Issue warnings & plan response)</li>
+                    <li>Citizens (View alerts & follow safety advice)</li>
+                </ul>
+
+                <h3>Abbreviations</h3>
+                <p>
+                    <strong>AWS:</strong> Automatic Weather Station | 
+                    <strong>IMD:</strong> India Meteorological Department | 
+                    <strong>HW:</strong> Heatwave | 
+                    <strong>SHW:</strong> Severe Heatwave
+                </p>
+            </section>
+
+            <!-- Container Box 2: Forecast Table & Hotspot Map -->
+            <!-- Task 7 -->
+            <section id="forecast" class="content-block">
+                <h2>Regional Forecast & Interactive Hotspots</h2>
+                <table>
+                    <caption>Heatwave Forecast Summary - Week of 27 July 2026</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Region</th>
+                            <th rowspan="2">Station</th>
+                            <th colspan="2">Forecast</th>
+                        </tr>
+                        <tr>
+                            <th>Max Temperature</th>
+                            <th>Severity Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>North Zone</td>
+                            <td>Delhi AWS</td>
+                            <td>46&deg;C</td>
+                            <td>Severe Heatwave</td>
+                        </tr>
+                        <tr>
+                            <td>Central Zone</td>
+                            <td>Nagpur AWS</td>
+                            <td>44&deg;C</td>
+                            <td>Heatwave</td>
+                        </tr>
+                        <tr>
+                            <td>Western Zone</td>
+                            <td>Rajkot AWS</td>
+                            <td>45&deg;C</td>
+                            <td>Severe Heatwave</td>
+                        </tr>
+                        <tr>
+                            <td>Coastal Zone</td>
+                            <td>Chennai AWS</td>
+                            <td>37&deg;C</td>
+                            <td>Normal</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Highest Recorded</td>
+                            <td>46&deg;C</td>
+                            <td>Severe Heatwave</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <!-- Task 5 & Task 6 -->
+                <h3>Hotspot Interactive Map</h3>
+                <div class="card">
+                    <img src="1000091528.jpg" alt="Regional Heatwave Map" usemap="#region" class="responsive-img">
+                    <map name="region">
+                        <area shape="rect" coords="0,0,1000,500" href="https://en.wikipedia.org/wiki/North_India" alt="North India">
+                        <area shape="rect" coords="0,500,1000,1000" href="https://en.wikipedia.org/wiki/South_India" alt="South India">
+                    </map>
+                </div>
+            </section>
+
+            <!-- Container Box 3: Media Center & Embedded Views -->
+            <section id="media" class="content-block">
+                <h2>Media Center & Live Resources</h2>
+                
+                <div class="grid-2col">
+                    <div>
+                        <h4>Awareness Video</h4>
+                        <video controls style="width: 100%;">
+                            <source src="istockphoto-2062654775-640_adpp_is.mp4" type="video/mp4">
+                            <source src="heatwave_awareness.ogg" type="video/ogg">
+                            Your browser does not support the video tag[cite: 8].
+                        </video>
+                    </div>
+                    <div>
+                        <h4>Audio Advisory</h4>
+                        <audio controls style="width: 100%; margin-top: 15px;">
+                            <source src="2022050294.mp3" type="audio/mpeg">
+                            <source src="heatwave_advisory.ogg" type="audio/ogg">
+                            Your browser does not support the audio element[cite: 8].
+                        </audio>
+                    </div>
+                </div>
+
+                <h3>Live Portals</h3>
+                <div class="iframe-grid">
+                    <iframe src="https://www.google.com/maps?q=New+Delhi&output=embed" title="Location Map" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://mausam.imd.gov.in/mumbai/#." title="IMD Website"></iframe>
+                </div>
+
+                <noscript>
+                    <p style="color: #dc2626; font-weight: bold;">
+                        JavaScript is disabled in your browser. Some interactive features may not work correctly[cite: 8].
+                    </p>
+                </noscript>
+            </section>
+
+            <!-- Container Box 4: Advisory Subscription Form -->
+            <!-- Task 8 -->
+            <section id="subscribe" class="content-block">
+                <h2>Heatwave Advisory Subscription</h2>
+                <form action="#" method="post" class="styled-form">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <label for="cname">Full Name</label>
+                        <input type="text" id="cname" name="cname" placeholder="Enter your full name" required>
+
+                        <label for="cemail">Email Address</label>
+                        <input type="email" id="cemail" name="cemail" placeholder="you@example.com" required>
+
+                        <label for="cmobile">Mobile Number</label>
+                        <input type="tel" id="cmobile" name="cmobile" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Region Selection</legend>
+                        <label for="region">Select your region</label>
+                        <select id="region" name="region" required>
+                            <option value="">-- Choose Region --</option>
+                            <option value="north">North Zone</option>
+                            <option value="central">Central Zone</option>
+                            <option value="konkan">Konkan Zone</option>
+                            <option value="vidarbha">Vidarbha Zone</option>
+                            <option value="marathwada">Marathwada Zone</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferred Alert Language</legend>
+                        <span class="inline-option"><input type="radio" id="lang-en" name="language" value="english" checked> <label for="lang-en">English</label></span>
+                        <span class="inline-option"><input type="radio" id="lang-hi" name="language" value="hindi"> <label for="lang-hi">Hindi</label></span>
+                        <span class="inline-option"><input type="radio" id="lang-mr" name="language" value="marathi"> <label for="lang-mr">Marathi</label></span>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Alert Types to Receive</legend>
+                        <span class="inline-option"><input type="checkbox" id="alert-sms" name="alerttype" value="sms" checked> <label for="alert-sms">SMS</label></span>
+                        <span class="inline-option"><input type="checkbox" id="alert-email" name="alerttype" value="email"> <label for="alert-email">Email</label></span>
+                        <span class="inline-option"><input type="checkbox" id="alert-app" name="alerttype" value="app"> <label for="alert-app">App Notification</label></span>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-submit">Subscribe</button>
+                        <button type="reset" class="btn btn-reset">Reset</button>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Heatwave Intelligence System | Disaster Management &amp; Weather Advisory Portal</p>
+    </footer>
+
+</body>
+</html>
